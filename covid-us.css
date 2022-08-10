@@ -1,0 +1,407 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    /* transition: 300ms; */
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: var(--primary-color);
+    /* transition: 300ms ease-in-out; */
+}
+a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+:root {
+    --primary-color: #ECECEC;
+    --secondary-color: #1E1E1E;
+    --third-color: #E74E57;
+}
+.dark-theme {
+    --primary-color: #1E1E1E;
+    --secondary-color: #ECECEC;
+}
+.mainWrapper {
+    background: var(--primary-color);
+}
+
+
+
+.darkmode {
+    border: var(--third-color) 1px solid;
+    color: var(--third-color);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.darkmode:hover {
+    transition: 300ms;
+    cursor: pointer;
+    background: var(--secondary-color);
+}
+#checkbox {
+    display: none;
+}
+/* States Map */
+.us-states {
+    max-width: 900px;
+    margin: 1em auto;
+    padding: 0px 10px 1em 10px;
+    text-align: center;
+    position: relative;
+}
+
+.states {
+    fill: var(--third-color);    
+    transition: 300ms;
+}
+.states:hover {
+    cursor: pointer;
+    fill: #cb3640;
+}
+/* States Map */
+
+/* State Modals */
+.state-modal {
+    position: absolute;
+    width: fit-content;
+}
+.arrow-icon {
+    font-size: 26px;
+    color: var(--secondary-color);
+}
+.state-modal-content {
+    margin-top: -13px;
+    background: var(--secondary-color);
+    border-radius: 20px;
+    padding: 1em;
+    color: var(--primary-color);
+    box-shadow: 0px 15px 56px -13px rgba(0,0,0,0.75);
+}
+.state-modal-body {
+    display: flex;
+}
+.state-modal-item {
+    margin: 10px;
+    transition: 300ms;
+}
+
+
+.state-modal-WA {
+    top: 112px;
+    left: 54px;
+    display: none;
+}
+.state-modal-OR {
+    top: 175px;
+    left: 46px;
+    display: none;
+}
+.state-modal-ID {
+    top: 175px;
+    left: 98px;
+    display: none;
+}
+.state-modal-MT {
+    top: 150px;
+    left: 165px;
+    display: none;
+}
+.state-modal-WY {
+    top: 209px;
+    left: 186px;
+    display: none;
+}
+.state-modal-CA {
+    top: 337px;
+    left: 40px;
+    display: none;
+}
+.state-modal-NV {
+    top: 294px;
+    left: 69px;
+    display: none;
+}
+.state-modal-UT {
+    top: 276px;
+    left: 124px;
+    display: none;
+}
+.state-modal-AZ {
+    top: 361px;
+    left: 111px;
+    display: none;
+}
+.state-modal-NM {
+    top: 365px;
+    left: 161px;
+    display: none;
+}
+.state-modal-CO {
+    top: 282px;
+    left: 198px;
+    display: none;
+}
+.state-modal-TX {
+    top: 470px;
+    left: 271px;
+    display: none;
+}
+.state-modal-OK {
+    top: 333px;
+    left: 296px;
+    display: none;
+}
+.state-modal-ND {
+    top: 144px;
+    left: 269px;
+    display: none;
+}
+.state-modal-SD {
+    top: 187px;
+    left: 269px;
+    display: none;
+}
+.state-modal-MN {
+    top: 185px;
+    left: 344px;
+    display: none;
+}
+.state-modal-LA {
+    top: 400px;
+    left: 379px;
+    display: none;
+}
+.state-modal-MS {
+    top: 379px;
+    left: 411px;
+    display: none;
+}
+.state-modal-AL {
+    top: 379px;
+    left: 433px;
+    display: none;
+}
+.state-modal-FL {
+    top: 459px;
+    left: 525px;
+    display: none;
+}
+.state-modal-NE {
+    top: 238px;
+    left: 289px;
+    display: none;
+}
+.state-modal-KS {
+    top: 287px;
+    left: 296px;
+    display: none;
+}
+.state-modal-IA {
+    top: 232px;
+    left: 350px;
+    display: none;
+}
+.state-modal-MO{
+    top: 289px;
+    left: 361px;
+    display: none;
+}
+.state-modal-AR {
+    top: 340px;
+    left: 359px;
+    display: none;
+}
+
+
+.state-modal-KY {
+    top: 277px;
+    left: 446px;
+    display: none;
+}
+.state-modal-TN {
+    top: 311px;
+    left: 431px;
+    display: none;
+}
+.state-modal-PA {
+    top: 215px;
+    left: 529px;
+    display: none;
+}
+.state-modal-NY {
+    top: 180px;
+    left: 542px;
+    display: none;
+}
+.state-modal-IL {
+    top: 270px;
+    left: 404px;
+    display: none;
+}
+.state-modal-IN {
+    top: 259px;
+    left: 436px;
+    display: none;
+}
+.state-modal-WI {
+    top: 193px;
+    left: 398px;
+    display: none;
+}
+.state-modal-MI {
+    top: 197px;
+    left: 440px;
+    display: none;
+}
+.state-modal-OH {
+    top: 245px;
+    left: 468px;
+    display: none;
+}
+.state-modal-GA{
+    top: 373px;
+    left: 493px;
+    display: none;
+}
+.state-modal-SC {
+    top: 341px;
+    left: 520px;
+    display: none;
+}
+
+.state-modal-NC {
+    top: 300px;
+    left: 520px;
+    display: none;
+}
+.state-modal-VA {
+    top: 272px;
+    left: 520px;
+    display: none;
+}
+.state-modal-WV {
+    top: 260px;
+    left: 500px;
+    display: none;
+}
+.state-modal-NJ {
+    top: 219px;
+    left: 571px;
+    display: none;
+}
+.state-modal-ME {
+    top: 141px;
+    left: 615px;
+    display: none;
+}
+.state-modal-VT {
+    top: 156px;
+    left: 580px;
+    display: none;
+}
+.state-modal-NH {
+    top: 153px;
+    left: 592px;
+    display: none;
+}
+.state-modal-MA {
+    top: 168px;
+    left: 596px;
+    display: none;
+}
+
+/* State Modals */
+
+/* Main Info */
+.main-info {
+    text-align: center;
+    color: var(--secondary-color);
+}
+.stats-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.country {
+    font-size: 30px;
+}
+.stats-item {
+    margin: 1em;
+    padding: 1em;
+}
+.stats-item h4 {
+    font-size: 26px;
+    color: var(--third-color);
+}
+.stats-item p {
+    font-size: 14px;
+}
+.main-info-links {
+    padding-top: 1em;
+}
+.link {
+    text-decoration: underline;
+    transition: 300ms;
+}
+.link:hover {
+    text-decoration: underline 3px;
+}
+/* Main Info */
+
+/* States information */
+/* States information */
+
+
+/* Mini States */
+.mini-states-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mini-states-item {
+    margin: 1em;
+    overflow: hidden;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    text-align: center;
+    border-radius: 20px;
+    border: var(--secondary-color) 1px solid;
+}
+.mini-state-svg {
+    fill: var(--third-color);
+}
+
+.mini-state-image {
+    height: 270px;
+}
+.mini-arrow-icon {
+    font-size: 26px;
+    margin-bottom: -14px;
+    color: var(--secondary-color);
+}
+.mini-state-info {
+    text-align: center;
+    color: var(--primary-color);
+    padding: 1em 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: var(--secondary-color);
+}
+.mini-state-modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mini-state-modal-item {
+    margin: 10px;
+}
+/* Mini States */

@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="covid-us.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="dark_theme_wrapper">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label class="dark" for="checkbox">
+                <div class="darkmode">Theme</div>
+            </label>
+        </div>
+        <div class="us-states">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+                <g id="a"><polygon class="ar states WA" points="371.46 103.39 499.36 136.96 478.98 225.25 479.74 235.06 478.98 238.45 431.45 226.38 426.92 227.13 414.85 226.63 390.32 225.63 375.61 224.12 362.03 218.83 346.18 219.97 339.77 209.03 337.5 194.31 328.45 188.27 316.75 184.5 326.94 163.37 321.28 156.21 321.66 143.76 320.53 121.87 323.55 111.69 346.56 128.66 357.88 130.55 363.16 137.72 364.67 147.91 373.72 130.55 372.59 117.72 371.46 103.39"/></g>
+                <g id="b"><polygon class="ar states OR" points="316.75 187.77 326.46 191.27 334.5 197.31 336.5 212.12 344.18 223.97 361.92 223.35 375.02 227.85 393.38 230.47 415.1 230.47 432.33 230.47 480.64 243.58 486.64 249.95 480.27 261.18 467.91 280.66 457.42 298.64 461.92 306.13 445.81 371.67 372.78 355.19 269.41 326.35 267.53 306.5 270.53 294.89 281.02 279.72 291.5 257.06 316.75 198.64 316.75 187.77"/></g>
+                <g id="c"><polygon class="ar states ID" points="502.51 137.79 482.68 224.52 482.68 235.34 481.41 240.2 489.54 249.51 460.88 299.51 464.88 306.51 449.88 371.67 595.2 399.83 608.53 316.84 602.86 307.51 593.2 312.17 578.2 311.17 567.2 309.51 561.53 301.84 548.54 266.18 540.54 266.51 534.87 268.81 531.87 260.85 543.54 230.85 534.21 223.18 525.21 202.52 516.54 194.85 519.21 186.19 513.87 176.19 520.87 141.86 502.51 137.79"/></g>
+                <g id="d"><polygon class="ar states MT" points="524.02 142.46 516.98 175.43 524.02 187.77 520.5 193.68 527.87 202.96 537.15 222.81 547.39 230.81 534.91 258.98 536.83 265.06 550.39 262.18 564.36 299.63 568.2 307 587.41 308.6 604.05 303.8 608.53 311.8 613.33 296.75 781.71 318.84 792.91 183.43 524.02 142.46"/></g>
+                <g id="e"><polygon class="ar states WY" points="615.29 300.44 593.9 433.64 770.26 456.53 781.14 322.2 615.29 300.44"/></g>
+                <g id="f"><polygon class="ar states CA" points="267.53 329.85 370.77 358.53 345.11 455.79 457.75 625.37 460.25 638.51 466.51 654.16 455.24 661.04 447.11 680.44 443.98 691.7 449.88 695.45 440.85 704.22 370.77 694.2 363.26 654.16 343.86 641.64 316.33 613.48 291.92 602.84 288.8 567.8 271.9 529.63 271.9 500.22 267.53 476.44 248.75 425.13 261.26 396.97 244.99 376.32 267.53 329.85"/></g>
+                <g id="g"><polygon class="ar states NV" points="373.8 360.59 348.4 456.53 460.08 621.8 466.51 585.85 476.85 592.08 486.64 583.46 520.47 389.82 373.8 360.59"/></g>
+                <g id="h"><polygon class="ar states UT" points="523.34 390.3 493.63 560.45 622.56 581.54 642.21 445.42 590.44 436.32 593.9 402.76 523.34 390.3"/></g>
+                <g id="i"><polygon class="ar states AZ" points="493.63 565.67 490.09 585.71 476.88 596.18 468.51 591.62 461.86 627.14 471.42 655.82 455.94 665.84 448.2 687.24 454.57 695.89 440.46 711.82 536.98 768.28 594.35 778.75 621.21 585.25 493.63 565.67"/></g>
+                <g id="j"><polygon class="ar states NM" points="625.48 585.49 598.15 778.75 621.21 778.75 621.21 765.58 667.52 771.18 667.52 761.37 773.33 773.28 785.25 602.3 625.48 585.49"/></g>
+                <g id="k"><polygon class="ar states CO" points="646.21 445.42 626.88 581.54 815.38 601.6 821.98 465.86 646.21 445.42"/></g>
+                <g id="l"><polygon class="ar states TX" points="788.25 618.74 777.39 778.75 671.4 767.12 678.74 783.42 710.54 810.33 720.32 832.34 723.93 853.54 762.72 878.81 772.5 867.4 785.25 847.83 817.34 853.54 840.98 878.81 851.58 911.42 870.33 932.62 883.38 971.75 913.54 986.43 937.19 994.58 942.89 985.61 929.85 948.11 942.89 921.21 960 902.45 981.21 898.38 1019.53 871.47 1042.36 860.88 1048.88 836.42 1052.96 811.96 1039.91 784.24 1035.02 728.8 999.15 711.68 947.79 716.57 916.8 708.42 886.64 704.22 866.26 688.85 868.7 621.8 788.25 618.74"/></g>
+                <g id="m"><polygon class="ar states OK" points="788.18 603.6 820.98 605.48 1015.95 607.33 1022.56 669.69 1022.56 720.35 999.65 707.14 948.54 711.98 916.82 703.17 890.39 701.41 870.12 685.99 872.61 619.23 788.18 615.06 788.18 603.6"/></g>
+                <g id="n"><polygon class="ar states ND" points="797.33 184.07 787.81 286.61 965.79 295.4 960 263.91 960 230.65 952.61 214.83 954.07 200.18 948.95 187.77 797.33 184.07"/></g>
+                <g id="o"><polygon class="ar states SD" points="965.79 298.79 787.81 290.13 778.85 388.01 915.71 396.24 929.57 404.03 939.1 399.7 951.66 401.87 962.92 410.1 968.55 410.1 968.55 393.64 962.92 382.38 968.55 318.84 962.05 310.48 965.79 298.79"/></g>
+                <g id="p"><polygon class="ar states MN" points="952.71 188.13 958.31 200.93 955.51 216.53 963.51 230.65 963.51 267.73 970.31 295.4 965.79 309.74 973.11 318.84 967.61 366.46 966.79 378.48 1098.32 378.48 1095.92 364.94 1080.32 356.54 1068.72 343.74 1056.72 336.94 1059.52 308.94 1055.12 300.44 1067.52 287.73 1067.92 268.13 1109.12 228.53 1125.52 219.73 1097.52 214.13 1077.12 216.13 1044.72 201.33 1025.11 204.13 1003.51 179.73 999.91 190.13 952.71 188.13"/></g>
+                <g id="q"><polygon class="ar states LA" points="1039.24 745.62 1043.22 784.22 1056.7 811.49 1045.98 859.28 1070.8 859.28 1106.03 865.41 1112.16 859.59 1126.56 865.41 1123.19 873.68 1138.2 879.5 1151.38 871.84 1159.95 873.99 1167.31 867.56 1186.92 875.52 1188.75 868.78 1170.98 860.81 1179.87 847.03 1170.37 842.74 1170.37 836.92 1161.79 821.9 1163.94 806.66 1111.55 810.88 1111.85 790.65 1122.27 772.27 1117.37 742.86 1039.24 745.62"/></g>
+                <g id="r"><polygon class="ar states MS" points="1142.38 671.17 1137.06 681 1134.2 692.47 1126.01 699.84 1119.46 712.94 1121.5 729.73 1122.32 743.65 1126.69 771.2 1115.42 790.27 1115.42 807.78 1168.38 802.73 1165.86 820.69 1174.32 835.38 1182.78 829.6 1207.71 828.71 1199.3 772.42 1201.4 667.81 1142.38 671.17"/></g>
+                <g id="s"><polygon class="ar states AL" points="1205.21 668.7 1202.2 772.84 1210.33 828.56 1217.86 818.92 1226 831.27 1232.92 829.16 1232.92 818.62 1224.49 812.07 1227.5 804.46 1303.4 797.54 1299.78 792.12 1299.18 774.95 1295.57 766.22 1298.58 746.64 1289.24 731.28 1270.27 662.61 1205.21 668.7"/></g>
+                <g id="t"><polygon class="ar states FL" points="1236.72 827.61 1236.72 817.48 1228.8 811.18 1232.76 807.35 1307.19 800.74 1312.92 806.91 1387.35 802.95 1391.31 808.67 1399.68 792.37 1411.13 792.37 1450.33 866.37 1450.33 879.5 1473.67 916.57 1473.67 957.97 1467.94 976.91 1447.68 980.43 1440.64 957.09 1423.9 957.97 1408.49 933.31 1389.55 908.65 1386.47 893.67 1382.5 879.5 1380.3 853.15 1367.97 850.07 1353.43 835.38 1336.26 824.97 1326.13 831.27 1303.4 843.46 1289.13 829.37 1260.51 822.76 1236.72 827.61"/></g>
+                <g id="u"><polygon class="ar states NE" points="778.85 392.6 772.33 456.53 825.24 462.03 825.24 496.14 995.36 501.15 982.59 474.24 981.22 460.56 968.55 415.95 962.61 414.46 949.89 404.26 939.8 402.31 929.14 407.9 915.28 399.42 778.85 392.6"/></g>
+                <g id="v"><polygon class="ar states KS" points="825.21 501.15 819.98 601.6 1017.08 603.6 1017.08 533.83 1002.4 523.51 1008.04 508.98 995.36 505.6 825.21 501.15"/></g>
+                <g id="w"><polygon class="ar states IA" points="966.79 383.22 971.84 393.33 971.84 415.41 982.01 452.68 988.78 480.63 1087.04 480.63 1097.21 486.65 1101.44 478.09 1109.25 465.54 1107.83 457.26 1118.37 447.61 1123.77 434.93 1118.77 416.95 1100.53 404.56 1098.6 389.45 1097.13 381.18 966.79 383.22"/></g>
+                <g id="x"><polygon class="ar states MO" points="990.57 484.67 998.8 501.15 1012.52 507.54 1006.58 523.51 1020.56 532.06 1020.3 622.32 1139.65 618.74 1145.59 625.98 1138.28 636.95 1154.28 634.66 1158.4 618.74 1166.17 612.26 1166.17 601.6 1161.57 599.91 1155.2 588.94 1149.71 574.3 1139.19 567.9 1129.13 557.84 1134.62 537.72 1119.53 534.06 1118.16 525.37 1099.86 509.82 1095.29 488.79 1085.69 484.67 990.57 484.67"/></g>
+                <g id="y"><polygon class="ar states AR" points="1020.79 626.66 1025.82 667.81 1025.82 720.35 1037.43 726.11 1039.24 742.86 1118.3 739.65 1115.42 712.95 1124.88 695.92 1131.85 689.35 1131.85 678.9 1144.23 666.13 1144.23 655.29 1153.51 638.66 1134.01 640.36 1140.75 626.66 1134.55 621.24 1020.79 626.66"/></g>
+                <g id="a`"><polygon class="ar states KY" points="1166.17 616.24 1171.01 609.7 1168.59 599.9 1179 595.18 1187.35 595.18 1187.35 583.92 1196.79 580.66 1202.2 566.13 1223.66 564.32 1242.54 553.55 1251.25 557.06 1266.86 531.28 1279.57 524.01 1279.57 517.48 1290.83 517.48 1295.18 525.1 1307.53 528.01 1320.96 528.01 1328.23 523.65 1337.67 530.55 1337.67 542.89 1349.29 557.78 1359.45 562.5 1345.29 573.76 1340.21 582.83 1332.95 589.01 1318.79 597.72 1204.77 609.34 1196.42 609.34 1198.24 614.42 1166.17 616.24"/></g>
+                <g id="aa"><polygon class="ar states TN" points="1161.57 621.24 1201.69 618.24 1200.42 613.34 1319.88 601.72 1371.52 593 1371.52 598.81 1358.45 611.88 1350.1 612.97 1333.4 629.31 1317.42 635.48 1311.61 644.92 1305.08 650.73 1305.08 655.09 1270.13 659.45 1202.2 665.26 1148.13 667.81 1148.13 655.09 1159.75 635.48 1161.57 621.24"/></g>
+                <g id="ab"><polygon class="ar states PA" points="1372.52 402.42 1387.24 479.68 1508.66 454.54 1531.96 434.51 1516.01 421.43 1516.63 402.42 1520.22 395.93 1515.65 393.64 1504.71 378.48 1389.21 399.62 1388.11 389.6 1372.52 402.42"/></g>
+                <g id="ac"><path class="ar states NY" d="M1392.06,387.63l14.46-20.45c1.24-1.69,1.42-3.94,.49-5.81l-1.48-2.96c-1.6-3.21,.18-7.08,3.66-7.95l24.68-6.17c.28-.07,.56-.16,.83-.28l24.12-10.25,7.2-3.39c1.97-.93,3.22-2.9,3.22-5.07v-8.3c0-1.79-.86-3.48-2.31-4.54h0c-2.47-1.79-3.05-5.23-1.31-7.73l21.99-31.71c.8-1.16,2.02-1.97,3.39-2.28l38.75-8.71,7.77,44.81,4.47,3.26,12.55,78.67c.34,1.66-.09,3.38-1.17,4.68l-4.31,5.24c-1.54,1.87-4.1,2.54-6.35,1.67l-21.7-8.39c-.98-.38-1.83-1.03-2.47-1.87l-9.82-13.09c-1.28-1.71-3.42-2.54-5.52-2.15l-110.6,20.58-.56-7.82Z"/></g>
+                <g id="ad"><polygon class="ar states IL" points="1120.83 414.14 1127.8 435.14 1120.83 450.18 1111.99 458.14 1113.2 466.2 1100.49 488.22 1104.47 508.35 1121.72 524.72 1123.77 530.47 1140.74 537.55 1133.22 557.45 1153.51 572.93 1161.97 593 1168.16 595.05 1177.45 593 1183.64 593 1183.64 581.33 1192.05 577.35 1196.03 563.2 1207.97 530.91 1203.55 495.53 1196.47 429.08 1187.62 414.14 1187.62 406.62 1120.83 414.14"/></g>
+                <g id="ae"><polygon class="ar states IN" points="1200.12 433.91 1211.51 533.57 1200.12 561.81 1222.12 560.81 1239.81 549.93 1249.55 552.38 1262.81 527.37 1274.31 522.07 1265.91 423.87 1213.28 430.95 1200.12 433.91"/></g>
+                <g id="af"><polygon class="ar states WI" points="1071.3 269.51 1071.3 290.13 1060.24 300.47 1062.89 310.64 1060.24 335.41 1074.39 343.82 1082.35 353.55 1098.72 362.39 1104.03 400.74 1116.85 410.1 1187.18 402.64 1181.87 381.18 1185.41 362.83 1190.72 332.22 1199.12 308.87 1191.16 314.62 1177.45 334.08 1178.78 317.72 1180.99 303.12 1171.7 286.32 1129.68 277.47 1108.45 263.7 1100.49 256.68 1071.3 269.51"/></g>
+                <g id="ag"><polygon class="ar states MI" points="1218.47 424.87 1227.87 391.6 1219.47 365.37 1217.26 345.47 1220.35 320.7 1230.08 312.74 1239.37 315.39 1244.24 299.91 1253.08 285.32 1272.1 294.4 1287.14 304.33 1292.01 322.91 1284.05 340.6 1277.41 349.11 1283.16 356.53 1295.1 349.11 1306.16 338.83 1317.66 349.11 1317.66 366.7 1315.89 384.39 1300.41 414.91 1218.47 424.87"/></g>
+                <g id="ah"><polygon class="ar states OH" points="1269.45 423.66 1277.85 513.22 1293.33 513.22 1297.76 520.74 1319.43 523.83 1329.6 520.3 1341.55 530.03 1345.97 526.93 1352.16 513.22 1362.33 500.83 1381.35 475.84 1379.35 452.62 1369.41 403.08 1349.51 415.91 1342.43 423.87 1314.12 426.97 1299.08 419.01 1269.45 423.66"/></g>
+                <g id="ai"><polygon class="ar states GA" points="1273.58 662.61 1292.43 730.26 1303.4 746.94 1298.49 766.96 1303.4 774.03 1301.86 790.53 1314.31 803.99 1385.35 799.28 1391.07 803.99 1398.48 788.84 1409.25 788.51 1421.71 745.41 1411.27 744.4 1406.9 729.93 1393.43 713.77 1376.6 698.28 1359.45 684.14 1347.64 667.81 1337.54 664.95 1340.57 651.48 1273.58 662.61"/></g>
+                <g id="aj"><polygon class="ar states SC" points="1343.6 651.48 1340.57 662.61 1351.23 667.81 1363.8 684.48 1398.14 714.1 1410.94 730.6 1414.3 742.86 1421.71 742.86 1433.83 729.93 1443.6 716.8 1459.42 701.65 1462.45 687.17 1473.67 671.68 1436.86 645.09 1407.12 649.8 1395.79 640.04 1359.45 642.73 1343.6 651.48"/></g>
+                <g id="ak"><polygon class="ar states NC" points="1308.93 653.84 1308.93 649.8 1316.33 645.09 1321.38 637.34 1335.52 630.41 1352.69 616.24 1361.45 613.44 1374.91 600.31 1374.91 591.56 1440.23 585.16 1529.45 566.86 1535.51 574.72 1521.7 585.16 1535.51 585.83 1539.21 593 1532.81 608.39 1523.39 620.85 1530.12 627.24 1526.42 630.41 1500.49 643.07 1490.39 666.3 1476.59 669.66 1437.54 642.06 1407.12 647.11 1396.8 637.34 1357.41 640.04 1340.57 647.78 1308.93 653.84"/></g>
+                <g id="al"><polygon class="ar states VA" points="1325.4 596.14 1343.36 583.41 1347.64 573.62 1360.99 563.5 1369.15 566.86 1379.26 566.86 1399.5 559.26 1407.12 540 1417.78 514.54 1427.25 514.54 1433.45 503.44 1441.61 495.28 1446.5 478.31 1462.17 483.53 1465.43 478.31 1473.67 483.86 1482.08 490.06 1497.42 508.99 1510.15 517.48 1510.15 532.16 1513.09 542.94 1521.25 549.46 1528.43 562.17 1441.61 580.43 1372.52 588.61 1325.4 596.14"/>
+                           <polygon class="ar states WV" points="1383.85 478.04 1354.78 515.89 1349.23 530.03 1340.57 534.12 1340.57 542.61 1352.82 555.67 1370.45 563.17 1381.35 563.17 1396.56 555.99 1413.86 509.97 1424.07 511.27 1432.14 497.24 1438.34 492.34 1445.52 472.43 1421.71 475.7 1384.77 482.88 1383.85 478.04"/></g>
+                <g id="am"><polygon class="ar states NJ" points="1524.84 397.13 1520.25 402.54 1518.5 420.03 1536.11 434.73 1526.81 442.18 1524.84 448.6 1518.55 450.04 1517.04 460.59 1524.84 465.79 1531.96 469 1537.74 469 1537.74 475.41 1542.98 472.2 1549.39 456.17 1551.43 435.77 1551.43 421.95 1543.98 420.62 1544.44 414.2 1547.65 405.54 1524.84 397.13"/></g>
+                <g id="an"><polygon class="ar states ME" points="1603.97 155.02 1593.48 183.68 1591.46 197.01 1593.88 210.33 1587.82 226.08 1584.19 237.38 1580.96 242.23 1601.15 299.56 1603.97 304.81 1611.24 309.66 1614.07 299.16 1614.07 287.45 1618.91 281.8 1629.01 278.57 1641.52 261.61 1646.37 251.52 1659.29 249.09 1673.82 232.34 1679.06 228.9 1679.06 222.04 1671.8 215.18 1663.73 210.74 1662.11 205.49 1653.23 202.66 1639.5 157.44 1624.56 150.58 1613.66 161.48 1603.97 155.02"/></g>
+                <g id="ao"><polygon class="ar states VT" points="1532.96 261.8 1570.67 250.71 1572.27 254.36 1570.9 260.8 1573.87 265.32 1570.9 271.94 1563.59 277.42 1565.65 284.73 1562.68 300.94 1563.14 309.66 1564.96 323.54 1565.56 333.22 1549.07 336.79 1545.27 308.24 1540.25 304.36 1532.96 261.8"/></g>
+                <g id="ap"><polygon class="ar states NH" points="1574.87 239.51 1578.02 242.71 1600.32 305.61 1609.89 312.44 1609.16 317.41 1603.92 317.41 1601.16 321.63 1597.08 325.87 1569 331.53 1567.37 324.4 1565.48 304.16 1568.39 284.5 1567.08 278.24 1573.49 272.41 1576.98 264.99 1573.34 260.18 1574.87 253.05 1572.62 249.41 1574.87 239.51"/></g>
+                <g id="aq"><polygon class="ar states MA" points="1549.06 339.74 1553.02 361.54 1603.08 350.64 1608.53 357.58 1616.95 364.27 1624.88 358.32 1628.84 359.31 1642.47 352 1638.26 339.74 1634.29 341.23 1635.78 346.43 1629.83 349.65 1621.41 344.45 1610.51 336.69 1616.95 324.38 1611.48 322.4 1609.27 319.42 1606.3 319.42 1599.67 327.78 1549.06 339.74"/></g>
+            </svg>
+
+            <!-- State info Modal -->
+            <div class="state-modal state-modal-WA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Washington. WA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="WA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="WA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="WA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-OR">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Oregon. OR</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="OR-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="OR-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="OR-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-ID">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Idaho. ID</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="ID-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="ID-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="ID-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-MT">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Montana. MT</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="MT-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="MT-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="MT-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-WY">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Wyoming. WY</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="WY-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="WY-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="WY-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-CA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>California. CA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="CA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="CA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="CA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-NV">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Navada. NV</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="NV-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="NV-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="NV-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-UT">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Utah. UT</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="UT-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="UT-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="UT-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-AZ">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Arizona. AZ</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="AZ-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="AZ-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="AZ-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-NM">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>New Mexico. NM</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="NM-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="NM-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="NM-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-modal state-modal-CO">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Colorado. CO</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="CO-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="CO-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="CO-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-TX">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Texas. TX</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="TX-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="TX-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="TX-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-OK">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Oklahoma. OK</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="OK-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="OK-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="OK-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-ND">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>North Dakota. ND</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="ND-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="ND-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="ND-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-SD">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>South Dakota. SD</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="SD-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="SD-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="SD-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-MN">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Minnesota. MN</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="MN-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="MN-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="MN-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-LA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Louisiana. LA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="LA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="LA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="LA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-MS">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Mississippi. MS</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="MS-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="MS-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="MS-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-AL">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Alabama. AL</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="AL-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="AL-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="AL-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-FL">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Florida. FL</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="FL-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="FL-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="FL-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-modal state-modal-NE">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Nebraska. NE</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="NE-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="NE-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="NE-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-KS">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Kansas. KS</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="KS-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="KS-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="KS-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-IA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Iowa. IA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="IA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="IA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="IA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-MO">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Missouri. MO</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="MO-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="MO-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="MO-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-AR">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Arkansas. AR</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="AR-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="AR-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="AR-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-KY">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Kentucky. KY</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="KY-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="KY-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="KY-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-TN">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Tennessee. TN</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="TN-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="TN-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="TN-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-PA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Pennsylvania. PA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="PA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="PA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="PA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-NY">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>New York. NY</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="NY-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="NY-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="NY-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-IL">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Illinois. IL</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="IL-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="IL-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="IL-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-modal state-modal-IN">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Indiana. IN</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="IN-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="IN-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="IN-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-WI">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Wisconsin. WI</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="WI-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="WI-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="WI-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-MI">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Michigan. MI</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="MI-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="MI-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="MI-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-OH">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Ohio. OH</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="OH-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="OH-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="OH-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-GA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Georgia. GA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="GA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="GA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="GA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-SC">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>South Carolina. SC</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="SC-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="SC-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="SC-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-NC">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>North Carolina. NC</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="NC-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="NC-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="NC-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-VA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Virginia. VA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="VA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="VA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="VA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-WV">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>West Virginia. WV</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="WV-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="WV-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="WV-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-NJ">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>New Jersey. NJ</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="NJ-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="NJ-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="NJ-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="state-modal state-modal-ME">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Maine. ME</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="ME-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="ME-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="ME-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-VT">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Vermont. VT</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="VT-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="VT-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="VT-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-NH">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>New Hampshire. NH</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="NH-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="NH-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="NH-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state-modal state-modal-MA">
+                <i class="fa-solid arrow-icon fa-caret-up"></i>
+                <div class="state-modal-content">
+                    <div class="state-modal-header">
+                        <p>Location</p>
+                        <h4>Massachusetts. MA</h4>
+                    </div>
+                    <div class="state-modal-body">
+                        <div class="state-modal-item">
+                            <p>Total Cases</p>
+                            <h4 id="MA-totalCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>New Cases</p>
+                            <h4 id="MA-newCase"></h4>
+                        </div>
+                        <div class="state-modal-item">
+                            <p>Deaths</p>
+                            <h4 id="MA-deathsCase"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- State info Modal -->
+
+
+            <div class="main-info">
+                <h4 class="country">United States Of America</h4>
+                <div class="stats-wrapper">
+                    <div class="stats-item">
+                        <p>Total cases</p>
+                        <h4 id="totalCases"></h4>
+                        <p>Reported yesterday: + <span id="newCases"></span></p>
+                    </div>
+                    <div class="stats-item">
+                        <p>Deaths</p>
+                        <h4 id="totalDeaths"></h4>
+                        <p>Reported yesterday: + <span id="newDeaths"></span></p>
+                    </div>
+                    <div class="stats-item">
+                        <p>People fully vaccinated</p>
+                        <h4 id="vaccinationsCompleted"></h4>
+                    </div>
+                    <div class="stats-item">
+                        <p>Vaccines Administered</p>
+                        <h4 id="vaccinesAdministered"></h4>
+                    </div>
+                </div>
+                <div class="main-info-footer">
+                    <p>"Total doses given" shows the number of vaccine doses given to people. Since some vaccines require more than 1 dose, the number of fully vaccinated people is likely lower. "People fully vaccinated" shows how many people have received the full amount of doses for the COVID-19 vaccine.</p>
+                    <p class="main-info-links">Updated last <span id="lastUpdatedDate"></span> • Special thanks to <a href="https://apidocs.covidactnow.org/">Covid Act Now</a> for creating, sharing, and maintaining the covid API.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mini-states">
+            <div class="mini-states-body">
+                <div class="mini-states-item">
+                    <div class="mini-state-image">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.98 289.57">
+                            <defs>
+                                <!-- <style>.b{fill:#00b4aa;}</style> -->
+                            </defs>
+                            <polygon class="AK-mini mini-state-svg" points="195.77 60.89 195.77 188.2 204.06 188.2 210.51 188.2 210.51 193.73 222.03 204.78 228.94 196.49 235.85 194.65 250.59 212.15 264.37 232.88 280.53 240.71 280.53 255.45 273.16 255.45 264.37 259.6 251.97 246.7 241.31 236.11 228.94 216.3 216.5 207.54 201.76 198.33 189.78 191.42 170.9 189.58 157.54 177.14 149.25 177.6 149.25 186.82 125.29 199.25 122.99 190.96 130.82 174.38 137.73 174.38 135.43 168.85 122.99 176.68 110.55 190.04 105.49 195.57 109.63 200.64 87.52 218.14 55.74 229.66 38.23 230.12 18.42 234.72 9.21 231.5 18.88 228.73 38.23 224.13 48.83 221.36 55.27 221.36 70.48 214.45 79.69 205.7 83.62 192.34 71.4 191.42 59.42 184.97 51.59 181.75 54.81 167.01 43.76 167.93 40.53 156.87 42.84 144.44 40.99 136.14 56.66 123.25 64.49 126.93 80.15 122.79 83.62 108.04 64.95 108.04 54.81 99.29 51.13 86.85 64.49 79.48 76 80.87 79.69 89.62 89.82 88.7 83.62 79.02 77.39 60.89 71.4 53.69 77.39 45.4 91.21 49.08 103.64 36.18 119.3 32.98 130.82 30.19 138.19 37.1 151.55 46.78 181.49 58.29 187.94 53.69 195.77 60.89"/></svg>
+                    </div>
+                    <i class="fa-solid mini-arrow-icon fa-caret-up"></i>
+                    <div class="mini-state-info">
+                        <div class="mini-state-modal-header">
+                            <p>Location</p>
+                            <h4>Alaska. AK</h4>
+                        </div>
+                        <div class="mini-state-modal-body">
+                            <div class="mini-state-modal-item">
+                                <p>Total Cases</p>
+                                <h4 id="AK-totalCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>New Cases</p>
+                                <h4 id="AK-newCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>Deaths</p>
+                                <h4 id="AK-deathsCase"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-states-item">
+                    <div class="mini-state-image">
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.98 289.57">
+                            <polygon class="CT-mini mini-state-svg" points="248.76 14.63 276.14 138.27 188.47 182.43 126.88 193.03 96.8 224.82 32.79 275.16 20.9 258.05 47.4 219.52 32.79 189.5 13.6 69.9 116.28 41.13 248.76 14.63"/></svg>
+                    </div>
+                    <i class="fa-solid mini-arrow-icon fa-caret-up"></i>
+                    <div class="mini-state-info">
+                        <div class="mini-state-modal-header">
+                            <p>Location</p>
+                            <h4>Connecticut. CT</h4>
+                        </div>
+                        <div class="mini-state-modal-body">
+                            <div class="mini-state-modal-item">
+                                <p>Total Cases</p>
+                                <h4 id="CT-totalCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>New Cases</p>
+                                <h4 id="CT-newCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>Deaths</p>
+                                <h4 id="CT-deathsCase"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-states-item">
+                    <div class="mini-state-image">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.98 289.57">
+                            <polygon class="DE-mini mini-state-svg" points="161.08 8.11 117.54 22.29 90.67 259.4 144.21 272.77 193.47 281.69 198.29 224.79 177.31 207.99 166.23 182.12 168.7 169.92 155.78 151.41 166.11 119.2 139.78 66.86 172.76 13.67 161.08 8.11"/></svg>
+
+                    </div>
+                    <i class="fa-solid mini-arrow-icon fa-caret-up"></i>
+                    <div class="mini-state-info">
+                        <div class="mini-state-modal-header">
+                            <p>Location</p>
+                            <h4>Delaware. DE</h4>
+                        </div>
+                        <div class="mini-state-modal-body">
+                            <div class="mini-state-modal-item">
+                                <p>Total Cases</p>
+                                <h4 id="DE-totalCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>New Cases</p>
+                                <h4 id="DE-newCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>Deaths</p>
+                                <h4 id="DE-deathsCase"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-states-item">
+                    <div class="mini-state-image">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg class="hi-wrapper" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 331.69 289.57">
+                            <polygon class="HI-mini mini-state-svg" points="269.19 197.27 264.9 198.32 261.59 206.43 264.18 213.79 262.59 217.7 258.1 221.82 251.17 222.49 244.47 224.3 241.52 231.51 244.53 238.7 243.46 245.62 244.25 252.25 239.71 263.36 234.59 270.73 237.29 279.54 242.08 283.25 246.45 287.99 254.27 288.59 260.23 280.86 273.07 279.46 280.19 277.46 287.1 280.29 292.34 280.33 307.48 276.71 315.47 272.62 309.31 263.69 309.5 257.21 303.46 252.28 304.1 247.29 306.98 241.11 300.48 232.14 291.45 220.39 282.55 214.3 273.73 201.58 269.19 197.27"/>
+                            <polygon class="HI-mini mini-state-svg" points="242.56 127.35 239.47 128.95 235.01 130.41 233.01 135.31 235.94 143.52 239.36 146.35 243 146.55 245.35 150.95 243.6 155.24 241.49 160.38 244.3 163.68 249.56 165.83 257.9 165.38 262.56 167.28 271.62 166.12 273.42 161.71 270.97 157.56 265.19 147.91 259.9 142.31 251.58 140.62 247.02 141.62 246.15 133.97 242.56 127.35"/>
+                            <polygon class="HI-mini mini-state-svg" points="206.82 99.48 201.18 106.05 206.05 109.52 217.76 114.31 227.61 122.77 235.25 120.97 239.05 117.1 231.45 113.99 225.41 111.27 219.22 106.52 206.82 99.48"/>
+                            <polygon class="HI-mini mini-state-svg" points="174.79 50.64 177.96 51.94 178.01 56.64 179.05 63.72 180.86 65.94 179.22 69.95 180.46 74.16 183.82 72.57 184.89 75.97 185.71 85.42 179.99 85.55 168.19 77.03 156.49 72.49 155 56.84 155.34 51.81 167.74 53.43 174.79 50.64"/>
+                            <polygon class="HI-mini mini-state-svg" points="116.72 2.2 106.24 3.13 102.78 11.58 111.87 24.91 118.63 27.67 129.74 25.81 136.19 13.66 134.04 9.28 116.72 2.2"/>
+                            <polygon class="HI-mini mini-state-svg" points="84.1 1.21 74.7 5.52 70.13 10.06 71.83 14.94 80.3 10.52 86.92 3.37 84.1 1.21"/>
+                            <polygon class="HI-mini mini-state-svg" points="210.71 126.39 211.67 129.51 213.91 133.44 212.38 139.59 219.74 140.99 224.7 137.07 221.59 128.61 214.36 125.65 210.71 126.39"/>
+                            <polygon class="HI-mini mini-state-svg" points="233.78 157.89 222.66 158.43 222.43 161.18 228.35 163.6 234.08 165.95 234.73 162.25 233.78 157.89"/></svg>
+                    </div>
+                    <i class="fa-solid mini-arrow-icon fa-caret-up"></i>
+                    <div class="mini-state-info">
+                        <div class="mini-state-modal-header">
+                            <p>Location</p>
+                            <h4>Hawaii. HI</h4>
+                        </div>
+                        <div class="mini-state-modal-body">
+                            <div class="mini-state-modal-item">
+                                <p>Total Cases</p>
+                                <h4 id="HI-totalCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>New Cases</p>
+                                <h4 id="HI-newCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>Deaths</p>
+                                <h4 id="HI-deathsCase"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-states-item">
+                    <div class="mini-state-image">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.98 298.81">
+                            <polygon class="RH-mini mini-state-svg" points="60.15 12.16 179.92 8 179.92 53.32 182.98 55.52 191.97 55.52 193.13 72.19 190.08 88.57 195.45 99.58 213.56 110.45 223.46 127.87 219.31 134.19 222.5 145.25 227.93 141.95 233.56 138.69 248.74 145.25 246.11 162.68 251.52 198.36 250.13 206.32 243.03 212.14 235.79 219.95 217.34 214.84 208.68 210.44 200.45 213.28 195.67 223.63 173.66 223.63 163.13 228.73 155.83 244.04 144.96 259.03 132.19 254.89 100.29 263.82 76.69 273.39 52.77 277.21 38.23 281.79 38.23 277.16 51.97 267.9 49.65 256.01 49.03 243.66 55.67 236.09 60.3 235.48 62.61 89.16 60.15 12.16"/></svg>
+                    </div>
+                    <i class="fa-solid mini-arrow-icon fa-caret-up"></i>
+                    <div class="mini-state-info">
+                        <div class="mini-state-modal-header">
+                            <p>Location</p>
+                            <h4>Rhode Island. RI</h4>
+                        </div>
+                        <div class="mini-state-modal-body">
+                            <div class="mini-state-modal-item">
+                                <p>Total Cases</p>
+                                <h4 id="RI-totalCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>New Cases</p>
+                                <h4 id="RI-newCase"></h4>
+                            </div>
+                            <div class="mini-state-modal-item">
+                                <p>Deaths</p>
+                                <h4 id="RI-deathsCase"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="covid-us.js"></script>
+</body>
+</html>
