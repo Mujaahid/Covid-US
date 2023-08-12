@@ -1,13 +1,11 @@
 * {
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
-    /* transition: 300ms; */
     padding: 0;
     margin: 0;
 }
 body {
     background: var(--primary-color);
-    /* transition: 300ms ease-in-out; */
 }
 a {
     text-decoration: none;
