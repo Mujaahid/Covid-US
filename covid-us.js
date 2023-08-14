@@ -243,30 +243,18 @@ async function getTotalCovid() {
 
     lastUpdatedDate = totalData.lastUpdatedDate
     document.getElementById('lastUpdatedDate').textContent = lastUpdatedDate;
-
-
-
     totalCases = totalData.actuals.cases.toLocaleString("en-US")
     newCases = totalData.actuals.newCases.toLocaleString("en-US")
-
     totalDeaths = totalData.actuals.deaths.toLocaleString("en-US")
     newDeaths = totalData.actuals.newDeaths.toLocaleString("en-US")
-
     vaccinationsCompleted = totalData.actuals.vaccinationsCompleted.toLocaleString("en-US")
     vaccinesAdministered = totalData.actuals.vaccinesAdministered.toLocaleString("en-US")
-
-
-
     document.getElementById('totalCases').textContent = totalCases;
     document.getElementById('newCases').textContent = newCases;
-
     document.getElementById('totalDeaths').textContent = totalDeaths;
     document.getElementById('newDeaths').textContent = newDeaths;
-
     document.getElementById('vaccinationsCompleted').textContent = vaccinationsCompleted;
     document.getElementById('vaccinesAdministered').textContent = vaccinesAdministered;
-
-    console.log(totalData)
 }
 getTotalCovid() 
 
@@ -714,7 +702,6 @@ document.getElementById('WY-totalCase').textContent = cases_WY;
 document.getElementById('WY-deathsCase').textContent = deaths_WY;
 document.getElementById('WY-newCase').textContent = newCases_WY;
 // WY
-
-    console.log(data)
 }
 getCovid()
+// calls the getCovid function
