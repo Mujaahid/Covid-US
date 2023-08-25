@@ -47,7 +47,6 @@ a {
     text-align: center;
     position: relative;
 }
-
 .states {
     fill: var(--third-color);    
     transition: 300ms;
