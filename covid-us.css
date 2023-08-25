@@ -23,9 +23,6 @@ a {
 .mainWrapper {
     background: var(--primary-color);
 }
-
-
-
 .darkmode {
     border: var(--third-color) 1px solid;
     color: var(--third-color);
