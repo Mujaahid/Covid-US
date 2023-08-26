@@ -39,7 +39,6 @@ a {
 #checkbox {
     display: none;
 }
-/* States Map */
 .us-states {
     max-width: 900px;
     margin: 1em auto;
@@ -55,9 +54,6 @@ a {
     cursor: pointer;
     fill: #cb3640;
 }
-/* States Map */
-
-/* State Modals */
 .state-modal {
     position: absolute;
     width: fit-content;
