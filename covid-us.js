@@ -227,7 +227,6 @@ $(document).ready(function(){
             $(".state-modal-MA").toggle();
         }
     );
-
 });
 
 
@@ -238,8 +237,6 @@ async function getTotalCovid() {
     const response = await fetch(total_covid_data);
     const totalData = await response.json();
     const {cases, deaths} = totalData;
-
-
     lastUpdatedDate = totalData.lastUpdatedDate
     document.getElementById('lastUpdatedDate').textContent = lastUpdatedDate;
     totalCases = totalData.actuals.cases.toLocaleString("en-US")
