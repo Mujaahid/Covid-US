@@ -307,7 +307,6 @@ async function getCovid() {
     document.getElementById('CA-deathsCase').textContent = deaths_CA;
     document.getElementById('CA-newCase').textContent = newCases_CA;
 // CA
-
 cases_CO = data[5].actuals.cases.toLocaleString("en-US")
 deaths_CO = data[5].actuals.deaths.toLocaleString("en-US")
 newCases_CO = data[5].actuals.newCases.toLocaleString("en-US")
