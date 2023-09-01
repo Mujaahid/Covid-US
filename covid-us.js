@@ -3,7 +3,6 @@ checkbox.addEventListener('change', () => {
     document.body.classList.toggle('dark-theme');
 }) 
 // toggle for dark theme mode
-
 $(document).ready(function(){
     $(".WA").hover(
         function(){
