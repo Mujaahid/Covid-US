@@ -267,7 +267,6 @@ async function getCovid() {
     document.getElementById('AK-deathsCase').textContent = deaths_AK;
     document.getElementById('AK-newCase').textContent = newCases_AK;
 // AK
-
     cases_AL = data[1].actuals.cases.toLocaleString("en-US")
     deaths_AL = data[1].actuals.deaths.toLocaleString("en-US")
     newCases_AL = data[1].actuals.newCases.toLocaleString("en-US")
@@ -276,7 +275,6 @@ async function getCovid() {
     document.getElementById('AL-deathsCase').textContent = deaths_AL;
     document.getElementById('AL-newCase').textContent = newCases_AL;
 // CA
-
     cases_AR = data[2].actuals.cases.toLocaleString("en-US")
     deaths_AR = data[2].actuals.deaths.toLocaleString("en-US")
     newCases_AR = data[2].actuals.newCases.toLocaleString("en-US")
@@ -285,7 +283,6 @@ async function getCovid() {
     document.getElementById('AR-deathsCase').textContent = deaths_AR;
     document.getElementById('AR-newCase').textContent = newCases_AR;
 // AR
-
     cases_AZ = data[3].actuals.cases.toLocaleString("en-US")
     deaths_AZ = data[3].actuals.deaths.toLocaleString("en-US")
     newCases_AZ = data[3].actuals.newCases.toLocaleString("en-US")
@@ -294,7 +291,6 @@ async function getCovid() {
     document.getElementById('AZ-deathsCase').textContent = deaths_AZ;
     document.getElementById('AZ-newCase').textContent = newCases_AZ;
 // AR
-
     cases_CA = data[4].actuals.cases.toLocaleString("en-US")
     deaths_CA = data[4].actuals.deaths.toLocaleString("en-US")
     newCases_CA = data[4].actuals.newCases.toLocaleString("en-US")
