@@ -252,17 +252,14 @@ async function getTotalCovid() {
     document.getElementById('vaccinesAdministered').textContent = vaccinesAdministered;
 }
 getTotalCovid() 
-
 const api_url = 'https://api.covidactnow.org/v2/states.json?apiKey=d6ebbbb1343042ed8274eaa43ec20d5a';
 async function getCovid() {
     const response = await fetch(api_url);
     const data = await response.json();
     const {cases, deaths} = data;
-
     cases_AK = data[0].actuals.cases.toLocaleString("en-US")
     deaths_AK = data[0].actuals.deaths.toLocaleString("en-US")
     newCases_AK = data[0].actuals.newCases.toLocaleString("en-US")
-
     document.getElementById('AK-totalCase').textContent = cases_AK;
     document.getElementById('AK-deathsCase').textContent = deaths_AK;
     document.getElementById('AK-newCase').textContent = newCases_AK;
