@@ -357,11 +357,9 @@ document.getElementById('IA-totalCase').textContent = cases_IA;
 document.getElementById('IA-deathsCase').textContent = deaths_IA;
 document.getElementById('IA-newCase').textContent = newCases_IA;
 // IA
-
 cases_ID = data[13].actuals.cases.toLocaleString("en-US")
 deaths_ID = data[13].actuals.deaths.toLocaleString("en-US")
 newCases_ID = data[13].actuals.newCases.toLocaleString("en-US")
-
 document.getElementById('ID-totalCase').textContent = cases_ID;
 document.getElementById('ID-deathsCase').textContent = deaths_ID;
 document.getElementById('ID-newCase').textContent = newCases_ID;
@@ -369,21 +367,17 @@ document.getElementById('ID-newCase').textContent = newCases_ID;
 cases_IL = data[14].actuals.cases.toLocaleString("en-US")
 deaths_IL = data[14].actuals.deaths.toLocaleString("en-US")
 newCases_IL = data[14].actuals.newCases.toLocaleString("en-US")
-
 document.getElementById('IL-totalCase').textContent = cases_IL;
 document.getElementById('IL-deathsCase').textContent = deaths_IL;
 document.getElementById('IL-newCase').textContent = newCases_IL;
 // IL
-
 cases_IN = data[15].actuals.cases.toLocaleString("en-US")
 deaths_IN = data[15].actuals.deaths.toLocaleString("en-US")
 newCases_IN = data[15].actuals.newCases.toLocaleString("en-US")
-
 document.getElementById('IN-totalCase').textContent = cases_IN;
 document.getElementById('IN-deathsCase').textContent = deaths_IN;
 document.getElementById('IN-newCase').textContent = newCases_IN;
 // IN
-
 cases_KS = data[16].actuals.cases.toLocaleString("en-US")
 deaths_KS = data[16].actuals.deaths.toLocaleString("en-US")
 newCases_KS = data[16].actuals.newCases.toLocaleString("en-US")
