@@ -330,16 +330,13 @@ document.getElementById('FL-totalCase').textContent = cases_FL;
 document.getElementById('FL-deathsCase').textContent = deaths_FL;
 document.getElementById('FL-newCase').textContent = newCases_FL;
 // FL
-
 cases_GA = data[10].actuals.cases.toLocaleString("en-US")
 deaths_GA = data[10].actuals.deaths.toLocaleString("en-US")
 newCases_GA = data[10].actuals.newCases.toLocaleString("en-US")
-
 document.getElementById('GA-totalCase').textContent = cases_GA;
 document.getElementById('GA-deathsCase').textContent = deaths_GA;
 document.getElementById('GA-newCase').textContent = newCases_GA;
 // GA
-
 cases_HI = data[11].actuals.cases.toLocaleString("en-US")
 deaths_HI = data[11].actuals.deaths.toLocaleString("en-US")
 newCases_HI = data[11].actuals.newCases.toLocaleString("en-US")
