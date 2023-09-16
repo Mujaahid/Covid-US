@@ -332,8 +332,6 @@ a {
 .link:hover {
     text-decoration: underline 3px;
 }
-/* Main Info */
-/* Mini States */
 .mini-states-body {
     display: flex;
     flex-wrap: wrap;
