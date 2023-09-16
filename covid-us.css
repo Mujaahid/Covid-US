@@ -341,12 +341,9 @@ a {
     margin: 1em;
     overflow: hidden;
     max-width: 300px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
     text-align: center;
     border-radius: 20px;
     border: var(--secondary-color) 1px solid;
