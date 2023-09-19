@@ -128,8 +128,6 @@ $(document).ready(function(){
             $(".state-modal-AR").toggle();
         }
     );
-
-
     $(".KY").hover(
         function(){
             $(".state-modal-KY").toggle();
